@@ -2,7 +2,7 @@ from collections import namedtuple
 import psycopg2
 import datetime
 
-conn = psycopg2.connect(dbname='library', user='postgres', password='1Giaape1')
+conn = psycopg2.connect(dbname='library', user='postgres', password=os.getenv('API_PASSWORD'))
 curr = conn.cursor()
 
 
